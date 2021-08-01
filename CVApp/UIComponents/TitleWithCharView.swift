@@ -59,7 +59,7 @@ struct TitleWithCharView: View {
                 Text(subtitle)
                     .frame(width: UIScreen.main.bounds.width*0.95, alignment: .leading)
                     .font(.system(size: 12, weight: .medium, design: .rounded))
-                    .foregroundColor(Color(UIColor.systemGray2))
+                    .foregroundColor(Color(UIColor.secondaryLabel))
             }
         }
         

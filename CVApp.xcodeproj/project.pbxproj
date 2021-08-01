@@ -68,12 +68,12 @@
 			isa = PBXGroup;
 			children = (
 				D36BCA2B26B4784000D44D4D /* CVAppApp.swift */,
+				D36BCA2D26B4784000D44D4D /* TabBarView.swift */,
 				D36BCA4926B4D40900D44D4D /* UIComponents */,
 				D36BCA4326B4D07500D44D4D /* Constants */,
 				D36BCA4826B4D3EC00D44D4D /* PersonalView */,
 				D36BCA4A26B4D4CC00D44D4D /* AcademyView */,
-				D36BCA2D26B4784000D44D4D /* TabBarView.swift */,
-				D36BCA3D26B4C72A00D44D4D /* SkillsView.swift */,
+				D3EEC77E26B67DC900D4CCCD /* SkillsView */,
 				D36BCA3F26B4C76700D44D4D /* ExperienceView.swift */,
 				D36BCA4126B4C79400D44D4D /* ContactView.swift */,
 				D36BCA2F26B4784200D44D4D /* Assets.xcassets */,
@@ -121,6 +121,14 @@
 				D36BCA3B26B4C6B900D44D4D /* AcademyView.swift */,
 			);
 			path = AcademyView;
+			sourceTree = "<group>";
+		};
+		D3EEC77E26B67DC900D4CCCD /* SkillsView */ = {
+			isa = PBXGroup;
+			children = (
+				D36BCA3D26B4C72A00D44D4D /* SkillsView.swift */,
+			);
+			path = SkillsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
