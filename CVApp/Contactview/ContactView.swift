@@ -47,13 +47,19 @@ struct ContactView: View {
                         LazyVStack(spacing: spacing) {
                             ForEach(column.items) {item in
                                 getItemView(gridItem: item)
+                                    .background(
+                                        Color(UIColor.systemBackground)
+                                            .cornerRadius(13)
+                                            .shadow(color: Color(UIColor.systemIndigo), radius: 5).opacity(1)
+                                    )
                             }
                         }
+                        .padding(.top, 20)
                     }
                     
                 }
                 .padding(.horizontal, horizontalPadding)
-                .navigationTitle("Contact")
+                .navigationTitle("Social")
                 .toolbar {
                     ToolbarItem(placement: .primaryAction) {
                         HStack {
