@@ -28,8 +28,10 @@ struct JobListRow: View {
                 }
                 Spacer()
                 Text(job.name)
+                    .frame(width: UIScreen.main.bounds.width*0.3)
+                    .multilineTextAlignment(.trailing)
                     .foregroundColor(Color(UIColor.systemIndigo))
-                    .font(.system(size: 14, weight: .semibold, design: .rounded))
+                    .font(.system(size: 16, weight: .bold, design: .rounded))
             }
             .padding()
         }

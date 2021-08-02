@@ -34,6 +34,20 @@ struct ExperienceView: View {
                 }
             }
             .navigationTitle("Experience")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    HStack {
+                        Image(systemName: "latch.2.case")
+                            .frame(width: 30, height: 30, alignment: .center)
+                            .foregroundColor(Color(UIColor.label))
+                            .background(
+                                Color(UIColor.systemBackground)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(UIColor.systemIndigo), radius: 10)
+                            )
+                    }
+                }
+            }
         }
     }
 }
@@ -62,7 +76,7 @@ fileprivate let jobs = [Job(type: .other, name: "GoodPeople", position: "Vendedo
                         Job(type: .auditor, name: "BDO", position: "Auditor", dateStart: "dsafas", dateEnd: "safjnakd", description: "jfdsdsigvojsdfl"),
                         Job(type: .auditor, name: "Tarshop", position: "Auditor", dateStart: "dsafas", dateEnd: "safjnakd", description: "jfdsdsigvojsdfl"),
                         Job(type: .developer, name: "Gob. Ciudad", position: "iOS Dev", dateStart: "dsafas", dateEnd: "safjnakd", description: "jfdsdsigvojsdfl"),
-                        Job(type: .developer, name: "FluxIt", position: "iOS Dev", dateStart: "dsafas", dateEnd: "safjnakd", description: "jfdsdsigvojsdfl")]
+                        Job(type: .developer, name: "FluxIt", position: "iOS Dev", dateStart: "dsafas", dateEnd: "safjnakd", description: "iahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaeg")]
 
 struct ExperienceView_Previews: PreviewProvider {
     static var previews: some View {
