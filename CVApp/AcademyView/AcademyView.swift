@@ -11,8 +11,7 @@ import DYPopoverView
 struct AcademyView: View {
     
     @State private var isShowingState = false
-    @State private var statusSelected: Status = .completed
-    @State var str = "   "
+    @State private var dataSelected: AcademyData = AcademyData(title: "", description: "", status: .completed)
 
     var body: some View {
         NavigationView {
@@ -23,16 +22,10 @@ struct AcademyView: View {
                             TitleWithDescriptionView(title: data.title, subtitle: data.subtitle, description: data.description)
                             data.status.image
                                 .anchorView(viewId: "\(data.id)")
-                                .simultaneousGesture (
-                                    
-                                    
-                                    LongPressGesture(minimumDuration: 1)
-                                        .onEnded { _ in
-                                            statusSelected = data.status
-                                            str = data.idString
-                                            isShowingState.toggle()
-                                        }
-                                )
+                                .onTapGesture(perform: {
+                                    dataSelected = data
+                                    isShowingState.toggle()
+                                })
                                 .foregroundColor(Color(UIColor.label))
                                 .font(.system(size: 18, weight : .bold, design: .default ))
                                 .frame(width: 26, height: 26, alignment: .center)
@@ -62,19 +55,20 @@ struct AcademyView: View {
                 }
             }
 
-        }.popoverView(content: {
+        }
+        .popoverView(content: {
             HStack {
-                statusSelected.image
+                dataSelected.status.image
                     .font(.system(size: 18, weight : .bold, design: .default ))
                     .frame(width: 26, height: 26, alignment: .center)
-                Text(statusSelected.rawValue)
+                Text(dataSelected.status.rawValue)
                     .multilineTextAlignment(.center)
                     .font(.system(size: 16, weight: .bold, design: .rounded))
                     .foregroundColor(Color(UIColor.label))
             }
             
         }, background: {
-            statusSelected.iconColor
+            dataSelected.status.iconColor
                 .shadow(color: Color(UIColor.label), radius: 5)
                 .onTapGesture {
                 isShowingState.toggle()
@@ -84,7 +78,7 @@ struct AcademyView: View {
                      anchorFrame: nil,
                      popoverType: .popout,
                      position: .left,
-                     viewId: str,
+                     viewId: dataSelected.id,
                      settings: DYPopoverViewSettings(shadowRadius: 20)
         )
     }
@@ -94,15 +88,11 @@ struct Academy {
     let data: [AcademyData]
 }
 struct AcademyData: Hashable {
-    let id = UUID()
+    let id = UUID().uuidString
     let title: String
     var subtitle: String? = nil
     let description: String
     let status: Status
-    
-    var idString: String {
-        return "\(id)"
-    }
 }
 
 enum Status {
