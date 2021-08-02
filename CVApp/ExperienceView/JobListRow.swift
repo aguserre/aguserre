@@ -28,7 +28,7 @@ struct JobListRow: View {
                 }
                 Spacer()
                 Text(job.name)
-                    .frame(width: UIScreen.main.bounds.width*0.3)
+                    .frame(width: UIScreen.main.bounds.width*0.3, alignment: .trailing)
                     .multilineTextAlignment(.trailing)
                     .foregroundColor(Color(UIColor.systemIndigo))
                     .font(.system(size: 16, weight: .bold, design: .rounded))

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D30FF57126B65E7600040240 /* TitleWithCharView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30FF57026B65E7600040240 /* TitleWithCharView.swift */; };
+		D35F66E826B8896E003CA1B1 /* DYPopoverView in Frameworks */ = {isa = PBXBuildFile; productRef = D35F66E726B8896E003CA1B1 /* DYPopoverView */; };
 		D36BCA2C26B4784000D44D4D /* CVAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36BCA2B26B4784000D44D4D /* CVAppApp.swift */; };
 		D36BCA2E26B4784000D44D4D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36BCA2D26B4784000D44D4D /* TabBarView.swift */; };
 		D36BCA3026B4784200D44D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36BCA2F26B4784200D44D4D /* Assets.xcassets */; };
@@ -21,7 +22,6 @@
 		D36BCA4726B4D1B400D44D4D /* TitleWithDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36BCA4626B4D1B400D44D4D /* TitleWithDescriptionView.swift */; };
 		D3EEC78126B744EC00D4CCCD /* JobListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEC78026B744EC00D4CCCD /* JobListRow.swift */; };
 		D3EEC78426B74AF300D4CCCD /* JobDetailSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEC78326B74AF300D4CCCD /* JobDetailSheetView.swift */; };
-		D3EEC78A26B7AFDA00D4CCCD /* ItemWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEC78926B7AFDA00D4CCCD /* ItemWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,6 @@
 		D36BCA4626B4D1B400D44D4D /* TitleWithDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithDescriptionView.swift; sourceTree = "<group>"; };
 		D3EEC78026B744EC00D4CCCD /* JobListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListRow.swift; sourceTree = "<group>"; };
 		D3EEC78326B74AF300D4CCCD /* JobDetailSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailSheetView.swift; sourceTree = "<group>"; };
-		D3EEC78926B7AFDA00D4CCCD /* ItemWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35F66E826B8896E003CA1B1 /* DYPopoverView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,6 @@
 				D3EEC77F26B744AF00D4CCCD /* ExperienceView */,
 				D3EEC78226B74A8A00D4CCCD /* JobDetailSheetView */,
 				D3EEC78B26B7B01B00D4CCCD /* Contactview */,
-				D3EEC78826B7AFBF00D4CCCD /* ItemWebView */,
 				D36BCA2F26B4784200D44D4D /* Assets.xcassets */,
 				D36BCA3126B4784200D44D4D /* Preview Content */,
 			);
@@ -156,14 +155,6 @@
 			path = JobDetailSheetView;
 			sourceTree = "<group>";
 		};
-		D3EEC78826B7AFBF00D4CCCD /* ItemWebView */ = {
-			isa = PBXGroup;
-			children = (
-				D3EEC78926B7AFDA00D4CCCD /* ItemWebView.swift */,
-			);
-			path = ItemWebView;
-			sourceTree = "<group>";
-		};
 		D3EEC78B26B7B01B00D4CCCD /* Contactview */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +180,7 @@
 			);
 			name = CVApp;
 			packageProductDependencies = (
+				D35F66E726B8896E003CA1B1 /* DYPopoverView */,
 			);
 			productName = CVApp;
 			productReference = D36BCA2826B4784000D44D4D /* CVApp.app */;
@@ -219,6 +211,7 @@
 			);
 			mainGroup = D36BCA1F26B4784000D44D4D;
 			packageReferences = (
+				D35F66E626B8896E003CA1B1 /* XCRemoteSwiftPackageReference "DYPopoverView" */,
 			);
 			productRefGroup = D36BCA2926B4784000D44D4D /* Products */;
 			projectDirPath = "";
@@ -252,7 +245,6 @@
 				D36BCA4026B4C76700D44D4D /* ExperienceView.swift in Sources */,
 				D36BCA3A26B4C64300D44D4D /* PersonalView.swift in Sources */,
 				D3EEC78426B74AF300D4CCCD /* JobDetailSheetView.swift in Sources */,
-				D3EEC78A26B7AFDA00D4CCCD /* ItemWebView.swift in Sources */,
 				D36BCA3E26B4C72A00D44D4D /* SkillsView.swift in Sources */,
 				D36BCA2E26B4784000D44D4D /* TabBarView.swift in Sources */,
 				D36BCA4226B4C79400D44D4D /* ContactView.swift in Sources */,
@@ -463,6 +455,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D35F66E626B8896E003CA1B1 /* XCRemoteSwiftPackageReference "DYPopoverView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DominikButz/DYPopoverView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D35F66E726B8896E003CA1B1 /* DYPopoverView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D35F66E626B8896E003CA1B1 /* XCRemoteSwiftPackageReference "DYPopoverView" */;
+			productName = DYPopoverView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D36BCA2026B4784000D44D4D /* Project object */;
 }

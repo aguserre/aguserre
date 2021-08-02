@@ -59,7 +59,7 @@ struct ContactView: View {
                     
                 }
                 .padding(.horizontal, horizontalPadding)
-                .navigationTitle("Social")
+                .navigationTitle("Contact me")
                 .toolbar {
                     ToolbarItem(placement: .primaryAction) {
                         HStack {
