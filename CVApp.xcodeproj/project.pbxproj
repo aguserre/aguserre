@@ -21,6 +21,7 @@
 		D36BCA4726B4D1B400D44D4D /* TitleWithDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36BCA4626B4D1B400D44D4D /* TitleWithDescriptionView.swift */; };
 		D3EEC78126B744EC00D4CCCD /* JobListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEC78026B744EC00D4CCCD /* JobListRow.swift */; };
 		D3EEC78426B74AF300D4CCCD /* JobDetailSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEC78326B74AF300D4CCCD /* JobDetailSheetView.swift */; };
+		D3EEC78A26B7AFDA00D4CCCD /* ItemWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEC78926B7AFDA00D4CCCD /* ItemWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		D36BCA4626B4D1B400D44D4D /* TitleWithDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithDescriptionView.swift; sourceTree = "<group>"; };
 		D3EEC78026B744EC00D4CCCD /* JobListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListRow.swift; sourceTree = "<group>"; };
 		D3EEC78326B74AF300D4CCCD /* JobDetailSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailSheetView.swift; sourceTree = "<group>"; };
+		D3EEC78926B7AFDA00D4CCCD /* ItemWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,8 @@
 				D3EEC77E26B67DC900D4CCCD /* SkillsView */,
 				D3EEC77F26B744AF00D4CCCD /* ExperienceView */,
 				D3EEC78226B74A8A00D4CCCD /* JobDetailSheetView */,
-				D36BCA4126B4C79400D44D4D /* ContactView.swift */,
+				D3EEC78B26B7B01B00D4CCCD /* Contactview */,
+				D3EEC78826B7AFBF00D4CCCD /* ItemWebView */,
 				D36BCA2F26B4784200D44D4D /* Assets.xcassets */,
 				D36BCA3126B4784200D44D4D /* Preview Content */,
 			);
@@ -153,6 +156,22 @@
 			path = JobDetailSheetView;
 			sourceTree = "<group>";
 		};
+		D3EEC78826B7AFBF00D4CCCD /* ItemWebView */ = {
+			isa = PBXGroup;
+			children = (
+				D3EEC78926B7AFDA00D4CCCD /* ItemWebView.swift */,
+			);
+			path = ItemWebView;
+			sourceTree = "<group>";
+		};
+		D3EEC78B26B7B01B00D4CCCD /* Contactview */ = {
+			isa = PBXGroup;
+			children = (
+				D36BCA4126B4C79400D44D4D /* ContactView.swift */,
+			);
+			path = Contactview;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +188,8 @@
 			dependencies = (
 			);
 			name = CVApp;
+			packageProductDependencies = (
+			);
 			productName = CVApp;
 			productReference = D36BCA2826B4784000D44D4D /* CVApp.app */;
 			productType = "com.apple.product-type.application";
@@ -197,6 +218,8 @@
 				Base,
 			);
 			mainGroup = D36BCA1F26B4784000D44D4D;
+			packageReferences = (
+			);
 			productRefGroup = D36BCA2926B4784000D44D4D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -229,6 +252,7 @@
 				D36BCA4026B4C76700D44D4D /* ExperienceView.swift in Sources */,
 				D36BCA3A26B4C64300D44D4D /* PersonalView.swift in Sources */,
 				D3EEC78426B74AF300D4CCCD /* JobDetailSheetView.swift in Sources */,
+				D3EEC78A26B7AFDA00D4CCCD /* ItemWebView.swift in Sources */,
 				D36BCA3E26B4C72A00D44D4D /* SkillsView.swift in Sources */,
 				D36BCA2E26B4784000D44D4D /* TabBarView.swift in Sources */,
 				D36BCA4226B4C79400D44D4D /* ContactView.swift in Sources */,

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TabBarView: View {
-    
+
     @State var selectedIndex = 0
     let icons = ["person", "graduationcap", "cpu", "latch.2.case", "message"]
     
@@ -25,7 +25,7 @@ struct TabBarView: View {
                 case 3:
                     ExperienceView()
                 default:
-                    ContactView()
+                    ContactView(gridItems: gridItems, numOfColumns: 2)
                 }
             }
             Divider()
@@ -46,6 +46,12 @@ struct TabBarView: View {
         }
     }
 }
+
+fileprivate let gridItems = [GridItem(height: 300, imageString: "github", url: "https://github.com/aguserre"),
+                             GridItem(height: 250, imageString: "linkedin", url: "https://www.linkedin.com/in/agustin-errecalde-a853b767/"),
+                             GridItem(height: 200, imageString: "facebook", url: "https://www.facebook.com/eagustiin"),
+                             GridItem(height: 180, imageString: "instagram", url: "https://www.instagram.com/agustinerrecalde/"),
+                             GridItem(height: 200, imageString: "twitter", url: "https://twitter.com/eagustiin")]
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
