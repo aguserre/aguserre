@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30813C626B8AC7D0038634F /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30813C526B8AC7D0038634F /* LoadView.swift */; };
 		D30FF57126B65E7600040240 /* TitleWithCharView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30FF57026B65E7600040240 /* TitleWithCharView.swift */; };
 		D35F66E826B8896E003CA1B1 /* DYPopoverView in Frameworks */ = {isa = PBXBuildFile; productRef = D35F66E726B8896E003CA1B1 /* DYPopoverView */; };
 		D36BCA2C26B4784000D44D4D /* CVAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36BCA2B26B4784000D44D4D /* CVAppApp.swift */; };
@@ -22,9 +23,22 @@
 		D36BCA4726B4D1B400D44D4D /* TitleWithDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36BCA4626B4D1B400D44D4D /* TitleWithDescriptionView.swift */; };
 		D3EEC78126B744EC00D4CCCD /* JobListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEC78026B744EC00D4CCCD /* JobListRow.swift */; };
 		D3EEC78426B74AF300D4CCCD /* JobDetailSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEC78326B74AF300D4CCCD /* JobDetailSheetView.swift */; };
+		D3FA512C26B90A5D006B4AC6 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA512B26B90A5D006B4AC6 /* BlurView.swift */; };
+		D3FA512E26B90A99006B4AC6 /* AnimateCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA512D26B90A99006B4AC6 /* AnimateCircle.swift */; };
+		D3FA513026B90B40006B4AC6 /* HeaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA512F26B90B40006B4AC6 /* HeaderMainView.swift */; };
+		D3FA513226B90BC7006B4AC6 /* ToolBarItemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA513126B90BC7006B4AC6 /* ToolBarItemImage.swift */; };
+		D3FA513426B90FF6006B4AC6 /* TabBarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA513326B90FF6006B4AC6 /* TabBarItemModel.swift */; };
+		D3FA513726B91075006B4AC6 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA513626B91075006B4AC6 /* DoubleExtension.swift */; };
+		D3FA513926B910CF006B4AC6 /* PersonalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA513826B910CF006B4AC6 /* PersonalDataModel.swift */; };
+		D3FA513B26B9113E006B4AC6 /* AcademyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA513A26B9113E006B4AC6 /* AcademyModel.swift */; };
+		D3FA513D26B9122C006B4AC6 /* SkillsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA513C26B9122C006B4AC6 /* SkillsModel.swift */; };
+		D3FA513F26B9128D006B4AC6 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA513E26B9128D006B4AC6 /* JobModel.swift */; };
+		D3FA514126B912DF006B4AC6 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA514026B912DF006B4AC6 /* ArrayExtension.swift */; };
+		D3FA514326B91322006B4AC6 /* GridItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA514226B91322006B4AC6 /* GridItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D30813C526B8AC7D0038634F /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
 		D30FF57026B65E7600040240 /* TitleWithCharView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithCharView.swift; sourceTree = "<group>"; };
 		D36BCA2826B4784000D44D4D /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36BCA2B26B4784000D44D4D /* CVAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAppApp.swift; sourceTree = "<group>"; };
@@ -40,6 +54,18 @@
 		D36BCA4626B4D1B400D44D4D /* TitleWithDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithDescriptionView.swift; sourceTree = "<group>"; };
 		D3EEC78026B744EC00D4CCCD /* JobListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListRow.swift; sourceTree = "<group>"; };
 		D3EEC78326B74AF300D4CCCD /* JobDetailSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailSheetView.swift; sourceTree = "<group>"; };
+		D3FA512B26B90A5D006B4AC6 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		D3FA512D26B90A99006B4AC6 /* AnimateCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateCircle.swift; sourceTree = "<group>"; };
+		D3FA512F26B90B40006B4AC6 /* HeaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMainView.swift; sourceTree = "<group>"; };
+		D3FA513126B90BC7006B4AC6 /* ToolBarItemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarItemImage.swift; sourceTree = "<group>"; };
+		D3FA513326B90FF6006B4AC6 /* TabBarItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemModel.swift; sourceTree = "<group>"; };
+		D3FA513626B91075006B4AC6 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		D3FA513826B910CF006B4AC6 /* PersonalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataModel.swift; sourceTree = "<group>"; };
+		D3FA513A26B9113E006B4AC6 /* AcademyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademyModel.swift; sourceTree = "<group>"; };
+		D3FA513C26B9122C006B4AC6 /* SkillsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsModel.swift; sourceTree = "<group>"; };
+		D3FA513E26B9128D006B4AC6 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		D3FA514026B912DF006B4AC6 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		D3FA514226B91322006B4AC6 /* GridItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,17 +99,9 @@
 		D36BCA2A26B4784000D44D4D /* CVApp */ = {
 			isa = PBXGroup;
 			children = (
-				D36BCA2B26B4784000D44D4D /* CVAppApp.swift */,
-				D36BCA2D26B4784000D44D4D /* TabBarView.swift */,
-				D36BCA4926B4D40900D44D4D /* UIComponents */,
-				D36BCA4326B4D07500D44D4D /* Constants */,
-				D36BCA4826B4D3EC00D44D4D /* PersonalView */,
-				D36BCA4A26B4D4CC00D44D4D /* AcademyView */,
-				D3EEC77E26B67DC900D4CCCD /* SkillsView */,
-				D3EEC77F26B744AF00D4CCCD /* ExperienceView */,
-				D3EEC78226B74A8A00D4CCCD /* JobDetailSheetView */,
-				D3EEC78B26B7B01B00D4CCCD /* Contactview */,
-				D36BCA2F26B4784200D44D4D /* Assets.xcassets */,
+				D3FA514526B913BC006B4AC6 /* Resourses */,
+				D3FA512A26B90A33006B4AC6 /* Models */,
+				D3FA514426B91394006B4AC6 /* FlowViews */,
 				D36BCA3126B4784200D44D4D /* Preview Content */,
 			);
 			path = CVApp;
@@ -116,8 +134,14 @@
 		D36BCA4926B4D40900D44D4D /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				D36BCA2D26B4784000D44D4D /* TabBarView.swift */,
+				D30813C526B8AC7D0038634F /* LoadView.swift */,
 				D36BCA4626B4D1B400D44D4D /* TitleWithDescriptionView.swift */,
 				D30FF57026B65E7600040240 /* TitleWithCharView.swift */,
+				D3FA512B26B90A5D006B4AC6 /* BlurView.swift */,
+				D3FA512D26B90A99006B4AC6 /* AnimateCircle.swift */,
+				D3FA512F26B90B40006B4AC6 /* HeaderMainView.swift */,
+				D3FA513126B90BC7006B4AC6 /* ToolBarItemImage.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -161,6 +185,53 @@
 				D36BCA4126B4C79400D44D4D /* ContactView.swift */,
 			);
 			path = Contactview;
+			sourceTree = "<group>";
+		};
+		D3FA512A26B90A33006B4AC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3FA513326B90FF6006B4AC6 /* TabBarItemModel.swift */,
+				D3FA513826B910CF006B4AC6 /* PersonalDataModel.swift */,
+				D3FA513A26B9113E006B4AC6 /* AcademyModel.swift */,
+				D3FA513C26B9122C006B4AC6 /* SkillsModel.swift */,
+				D3FA513E26B9128D006B4AC6 /* JobModel.swift */,
+				D3FA514226B91322006B4AC6 /* GridItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D3FA513526B9105D006B4AC6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D3FA513626B91075006B4AC6 /* DoubleExtension.swift */,
+				D3FA514026B912DF006B4AC6 /* ArrayExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D3FA514426B91394006B4AC6 /* FlowViews */ = {
+			isa = PBXGroup;
+			children = (
+				D36BCA2B26B4784000D44D4D /* CVAppApp.swift */,
+				D36BCA4826B4D3EC00D44D4D /* PersonalView */,
+				D36BCA4A26B4D4CC00D44D4D /* AcademyView */,
+				D3EEC77E26B67DC900D4CCCD /* SkillsView */,
+				D3EEC77F26B744AF00D4CCCD /* ExperienceView */,
+				D3EEC78226B74A8A00D4CCCD /* JobDetailSheetView */,
+				D3EEC78B26B7B01B00D4CCCD /* Contactview */,
+			);
+			path = FlowViews;
+			sourceTree = "<group>";
+		};
+		D3FA514526B913BC006B4AC6 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				D36BCA2F26B4784200D44D4D /* Assets.xcassets */,
+				D36BCA4926B4D40900D44D4D /* UIComponents */,
+				D36BCA4326B4D07500D44D4D /* Constants */,
+				D3FA513526B9105D006B4AC6 /* Extensions */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,18 +310,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3FA513F26B9128D006B4AC6 /* JobModel.swift in Sources */,
 				D36BCA4526B4D08500D44D4D /* ConstantsStrings.swift in Sources */,
+				D3FA512C26B90A5D006B4AC6 /* BlurView.swift in Sources */,
+				D3FA514126B912DF006B4AC6 /* ArrayExtension.swift in Sources */,
 				D3EEC78126B744EC00D4CCCD /* JobListRow.swift in Sources */,
 				D36BCA4726B4D1B400D44D4D /* TitleWithDescriptionView.swift in Sources */,
 				D36BCA4026B4C76700D44D4D /* ExperienceView.swift in Sources */,
 				D36BCA3A26B4C64300D44D4D /* PersonalView.swift in Sources */,
 				D3EEC78426B74AF300D4CCCD /* JobDetailSheetView.swift in Sources */,
 				D36BCA3E26B4C72A00D44D4D /* SkillsView.swift in Sources */,
+				D3FA513026B90B40006B4AC6 /* HeaderMainView.swift in Sources */,
+				D3FA513926B910CF006B4AC6 /* PersonalDataModel.swift in Sources */,
 				D36BCA2E26B4784000D44D4D /* TabBarView.swift in Sources */,
+				D30813C626B8AC7D0038634F /* LoadView.swift in Sources */,
+				D3FA513226B90BC7006B4AC6 /* ToolBarItemImage.swift in Sources */,
+				D3FA513426B90FF6006B4AC6 /* TabBarItemModel.swift in Sources */,
 				D36BCA4226B4C79400D44D4D /* ContactView.swift in Sources */,
+				D3FA512E26B90A99006B4AC6 /* AnimateCircle.swift in Sources */,
+				D3FA513726B91075006B4AC6 /* DoubleExtension.swift in Sources */,
 				D36BCA2C26B4784000D44D4D /* CVAppApp.swift in Sources */,
 				D36BCA3C26B4C6B900D44D4D /* AcademyView.swift in Sources */,
+				D3FA513D26B9122C006B4AC6 /* SkillsModel.swift in Sources */,
+				D3FA513B26B9113E006B4AC6 /* AcademyModel.swift in Sources */,
 				D30FF57126B65E7600040240 /* TitleWithCharView.swift in Sources */,
+				D3FA514326B91322006B4AC6 /* GridItemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

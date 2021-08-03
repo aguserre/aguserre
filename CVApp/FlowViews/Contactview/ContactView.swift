@@ -62,16 +62,7 @@ struct ContactView: View {
                 .navigationTitle("Contact me")
                 .toolbar {
                     ToolbarItem(placement: .primaryAction) {
-                        HStack {
-                            Image(systemName: "message")
-                                .frame(width: 30, height: 30, alignment: .center)
-                                .foregroundColor(Color(UIColor.label))
-                                .background(
-                                    Color(UIColor.systemBackground)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(UIColor.systemIndigo), radius: 10)
-                                )
-                        }
+                        ToolBarItemImage(item: .message)
                     }
                 }
             }
@@ -96,23 +87,10 @@ fileprivate func getItemView(gridItem: GridItem) -> some View {
 }
 
 
-struct GridItem: Identifiable {
-    let id = UUID()
-    let height: CGFloat
-    let imageString: String
-    let url: String
-}
-
-struct Column: Identifiable {
-    let id = UUID()
-    var items = [GridItem]()
-}
-
-
 struct ContactView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TabBarView(selectedIndex: 4)
+            TabBarView()
         }
         .previewDevice("iPhone 12 Pro")
     }
