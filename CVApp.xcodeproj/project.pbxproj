@@ -35,6 +35,7 @@
 		D3FA513F26B9128D006B4AC6 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA513E26B9128D006B4AC6 /* JobModel.swift */; };
 		D3FA514126B912DF006B4AC6 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA514026B912DF006B4AC6 /* ArrayExtension.swift */; };
 		D3FA514326B91322006B4AC6 /* GridItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA514226B91322006B4AC6 /* GridItemModel.swift */; };
+		D3FA514726B9194E006B4AC6 /* GradientTranslucentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA514626B9194E006B4AC6 /* GradientTranslucentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		D3FA513E26B9128D006B4AC6 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
 		D3FA514026B912DF006B4AC6 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		D3FA514226B91322006B4AC6 /* GridItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemModel.swift; sourceTree = "<group>"; };
+		D3FA514626B9194E006B4AC6 /* GradientTranslucentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTranslucentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				D3FA512D26B90A99006B4AC6 /* AnimateCircle.swift */,
 				D3FA512F26B90B40006B4AC6 /* HeaderMainView.swift */,
 				D3FA513126B90BC7006B4AC6 /* ToolBarItemImage.swift */,
+				D3FA514626B9194E006B4AC6 /* GradientTranslucentView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				D36BCA3A26B4C64300D44D4D /* PersonalView.swift in Sources */,
 				D3EEC78426B74AF300D4CCCD /* JobDetailSheetView.swift in Sources */,
 				D36BCA3E26B4C72A00D44D4D /* SkillsView.swift in Sources */,
+				D3FA514726B9194E006B4AC6 /* GradientTranslucentView.swift in Sources */,
 				D3FA513026B90B40006B4AC6 /* HeaderMainView.swift in Sources */,
 				D3FA513926B910CF006B4AC6 /* PersonalDataModel.swift in Sources */,
 				D36BCA2E26B4784000D44D4D /* TabBarView.swift in Sources */,
