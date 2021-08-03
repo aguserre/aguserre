@@ -21,7 +21,18 @@ struct PersonalView: View {
                 HeaderMainView()
                 
                 if !scrollViewIsShowing {
-                    TitleWithDescriptionView(title: "Presentacion", description: presentationText)
+                    ZStack(alignment: .bottom) {
+                        ScrollView {
+                            TitleWithDescriptionView(title: "Presentacion", description: presentationText)
+                        }
+                        Rectangle()
+                            .fill(
+                                LinearGradient(gradient: Gradient(stops: [
+                                    .init(color: Color(UIColor.systemBackground).opacity(0.01), location: 0),
+                                    .init(color: Color(UIColor.systemBackground), location: 1)
+                                ]), startPoint: .top, endPoint: .bottom)
+                            ).frame(height: 60)
+                    }
                 }
                 
                 HStack {
@@ -66,7 +77,7 @@ struct PersonalView: View {
 struct PersonalView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TabBarView()
+            PersonalView()
         }
         .previewDevice("iPhone 12 Pro")
     }
