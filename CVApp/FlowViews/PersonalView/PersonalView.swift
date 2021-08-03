@@ -57,7 +57,7 @@ struct PersonalView: View {
                 if scrollViewIsShowing {
                     ScrollView(.vertical) {
                         ForEach(personal.data, id: \.self) { data in
-                            TitleWithDescriptionView(title: data.title, subtitle: data.description, alignment: .center)
+                            TitleWithDescriptionView(title: data.title, description: data.description, alignment: .center)
                         }
                     }
                     .transition(.opacity)
