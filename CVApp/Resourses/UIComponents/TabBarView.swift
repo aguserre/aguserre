@@ -9,14 +9,14 @@ import SwiftUI
 
 struct TabBarView: View {
 
-    //@State var selectedIndex = 0
+    @State var user: User
     @State private var isLoading = true
     @State private var selectedItem: TabBarItemModel = .person
-        
+
     var body: some View {
         ZStack {
             VStack {
-                selectedItem.viewToShow
+                selectedItem.viewToShow(user: self.user)
                 Divider()
                 HStack {
                     ForEach(TabBarItemModel.allItems, id: \.self) { item in
@@ -44,10 +44,14 @@ struct TabBarView: View {
     }
     
     func fakeServiceCall() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            withAnimation(Animation.easeOut(duration: 0.5)) {
+        ServiceManager().fetchData { user in
+            guard let user = user else {
+                //show alert / fake data will show
                 isLoading.toggle()
+                return
             }
+            self.user = user
+            isLoading.toggle()
         }
     }
 }
@@ -55,7 +59,7 @@ struct TabBarView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TabBarView()
+            TabBarView(user: User())
         }
         .previewDevice("iPhone 12 Pro")
     }

@@ -8,6 +8,7 @@ import SwiftUI
 
 struct PersonalView: View {
     
+    var personalData: Personal?
     @State var scrollViewIsShowing = false
     var height: CGFloat {
         scrollViewIsShowing ? 20 : 40
@@ -23,7 +24,7 @@ struct PersonalView: View {
                 if !scrollViewIsShowing {
                     ZStack(alignment: .bottom) {
                         ScrollView {
-                            TitleWithDescriptionView(title: "Presentacion", description: presentationText)
+                            TitleWithDescriptionView(title: "Presentacion", description: personalData?.aboutMe ?? personalFake.aboutMe)
                         }
                         GradientTranslucentView()
                     }
@@ -56,7 +57,7 @@ struct PersonalView: View {
                 
                 if scrollViewIsShowing {
                     ScrollView(.vertical) {
-                        ForEach(personal.data, id: \.self) { data in
+                        ForEach(personalData?.personalData ?? personalFake.personalData, id: \.self) { data in
                             TitleWithDescriptionView(title: data.title, description: data.description, alignment: .center)
                         }
                     }

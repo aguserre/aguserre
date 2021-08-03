@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct SkillsView: View {
-
+ 
+    var skills: Skills?
+    
     var body: some View {
 
         NavigationView {
             ScrollView(.vertical) {
                 VStack {
-                    ForEach(skills.data, id: \.self) { skill in
+                    ForEach(skills?.skillsData ?? skillsFake.skillsData, id: \.self) { skill in
                         TitleWithCharView(title: skill.name, subtitle: skill.subtitle, char: skill.percent)
                     }
                 }
@@ -33,7 +35,7 @@ struct SkillsView: View {
 struct SkillsView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TabBarView()
+            TabBarView(user: User())
         }
         .previewDevice("iPhone 12 Pro")
     }

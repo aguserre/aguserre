@@ -25,19 +25,19 @@ enum TabBarItemModel: Int {
         }
     }
     
-    var viewToShow: some View {
+    func viewToShow(user: User) -> some View {
         ZStack {
             switch self {
             case .person:
-                PersonalView()
+                PersonalView(personalData: user.personal)
             case .graduationcap:
-                AcademyView()
+                AcademyView(userAcademy: user.academy)
             case .cpu:
-                SkillsView()
+                SkillsView(skills: user.skills)
             case .latch:
-                ExperienceView()
+                ExperienceView(experience: user.jobs)
             case .message:
-                ContactView(gridItems: gridItems, numOfColumns: 2)
+                ContactView(gridItems: user.social?.socialData ?? gridItemsFake, numOfColumns: 2)
             }
         }
     }
@@ -45,11 +45,4 @@ enum TabBarItemModel: Int {
     static var allItems = [person, graduationcap, cpu, latch, message]
 }
 
-fileprivate let gridItems = [GridItem(height: 200, imageString: "github", url: "https://github.com/aguserre"),
-                             GridItem(height: 140, imageString: "linkedin", url: "https://www.linkedin.com/in/agustin-errecalde-a853b767/"),
-                             GridItem(height: 110, imageString: "instagram", url: "https://www.instagram.com/agustinerrecalde/"),
-                             GridItem(height: 120, imageString: "telegram", url: "tg://resolve?domain=@agustinerre"),
-                             GridItem(height: 200, imageString: "whatsapp", url: "https://api.whatsapp.com/send?phone=+5492342514756"),
-                             GridItem(height: 150, imageString: "mail", url: "mailto:eagustiin@gmail.com"),
-                             GridItem(height: 100, imageString: "facebook", url: "https://www.facebook.com/eagustiin"),
-                             GridItem(height: 150, imageString: "twitter", url: "https://twitter.com/eagustiin")]
+

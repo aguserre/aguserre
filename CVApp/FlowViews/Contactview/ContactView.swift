@@ -11,14 +11,14 @@ struct ContactView: View {
 
     let spacing: CGFloat
     let horizontalPadding: CGFloat
-    let columns: [Column]
+    var columns: [Social]
 
     init(gridItems: [GridItem], numOfColumns: Int, spacing: CGFloat = 10, horizontalPadding: CGFloat = 10) {
         self.spacing = spacing
         self.horizontalPadding = horizontalPadding
-        var columns = [Column]()
+        var columns = [Social]()
         for _ in 0..<numOfColumns {
-            columns.append(Column())
+            columns.append(Social())
         }
         
         var columnHeight = Array<CGFloat>(repeating: 0, count: numOfColumns)
@@ -32,7 +32,7 @@ struct ContactView: View {
                     smallestColumnIndex = i
                 }
             }
-            columns[smallestColumnIndex].items.append(gridItem)
+            columns[smallestColumnIndex].socialData.append(gridItem)
             columnHeight[smallestColumnIndex] += gridItem.height
         }
         
@@ -45,7 +45,7 @@ struct ContactView: View {
                 HStack(alignment: .top, spacing: spacing) {
                     ForEach(columns) { column in
                         LazyVStack(spacing: spacing) {
-                            ForEach(column.items) {item in
+                            ForEach(column.socialData) {item in
                                 getItemView(gridItem: item)
                                     .background(
                                         Color(UIColor.systemBackground)
@@ -90,7 +90,7 @@ fileprivate func getItemView(gridItem: GridItem) -> some View {
 struct ContactView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TabBarView()
+            TabBarView(user: User())
         }
         .previewDevice("iPhone 12 Pro")
     }

@@ -10,6 +10,7 @@ import DYPopoverView
 
 struct AcademyView: View {
     
+    var userAcademy: Academy?
     @State private var isShowingState = false
     @State private var dataSelected: AcademyData = AcademyData(title: "", description: "", status: .completed)
 
@@ -17,7 +18,7 @@ struct AcademyView: View {
         NavigationView {
             ScrollView(.vertical) {
                 VStack {
-                    ForEach(academy.data, id: \.self) { data in
+                    ForEach(userAcademy?.academyData ?? academyFake.academyData, id: \.self) { data in
                         HStack {
                             TitleWithDescriptionView(title: data.title, subtitle: data.subtitle, description: data.description)
                             data.status.image
@@ -79,7 +80,7 @@ struct AcademyView: View {
 struct AcademyView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TabBarView()
+            TabBarView(user: User())
         }
         .previewDevice("iPhone 12 Pro")
     }

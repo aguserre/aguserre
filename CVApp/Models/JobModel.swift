@@ -8,8 +8,19 @@
 import SwiftUI
 
 
-struct Experience {
-    let data: [Job]
+struct JobExperience {
+    let jobsData: [Job]
+}
+extension JobExperience: Decodable, Encodable {
+    enum CodingKeys: String, CodingKey {
+        case jobsData
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        self.jobsData = try container.decode([Job].self, forKey: .jobsData)
+    }
 }
 
 struct Job: Identifiable {
@@ -21,15 +32,24 @@ struct Job: Identifiable {
     let dateEnd: String
     let description: String
 }
+extension Job: Decodable, Encodable {
+    enum CodingKeys: String, CodingKey {
+        case id, type, name, position, dateStart, dateEnd, description
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let type = try container.decode(String.self, forKey: .type)
+        self.type = JobType(rawValue: type) ?? .other
+        self.name = try container.decode(String.self, forKey: .name)
+        self.position = try container.decode(String.self, forKey: .position)
+        self.dateStart = try container.decode(String.self, forKey: .dateStart)
+        self.dateEnd = try container.decode(String.self, forKey: .dateEnd)
+        self.description = try container.decode(String.self, forKey: .description)
 
-enum JobType: String {
-    case auditor = "Auditor de Sistemas", developer = "Developer", other = "Otros"
+    }
 }
 
-let experience = Experience(data: jobs)
-let jobs = [Job(type: .other, name: "GoodPeople", position: "Vendedor", dateStart: "dsafas", dateEnd: "safjnakd", description: "jfdsdsigvojsdfl"),
-            Job(type: .auditor, name: "Bertora", position: "Auditor", dateStart: "dsafas", dateEnd: "safjnakd", description: "jfdsdsigvojsdfl"),
-            Job(type: .auditor, name: "BDO", position: "Auditor", dateStart: "dsafas", dateEnd: "safjnakd", description: "jfdsdsigvojsdfl"),
-            Job(type: .auditor, name: "Tarshop", position: "Auditor", dateStart: "dsafas", dateEnd: "safjnakd", description: "jfdsdsigvojsdfl"),
-            Job(type: .developer, name: "Gob. Ciudad", position: "iOS Dev", dateStart: "dsafas", dateEnd: "safjnakd", description: "jfdsdsigvojsdfl"),
-            Job(type: .developer, name: "FluxIt", position: "iOS Dev", dateStart: "dsafas", dateEnd: "safjnakd", description: "iahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaegosjgdknfgbahkdnfloigjwlnksghawbglkjawgg waeuigju ghairuwh uiarh uiahu huhguha gruiai hiaeg")]
+enum JobType: String, Codable {
+    case auditor = "Auditor de Sistemas", developer = "Developer", other = "Otros"
+}

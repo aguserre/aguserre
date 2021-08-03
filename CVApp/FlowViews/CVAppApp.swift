@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct CVAppApp: App {
+        
+    init() {
+      FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            TabBarView(user: User())
         }
     }
 }

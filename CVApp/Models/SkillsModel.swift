@@ -8,7 +8,18 @@
 import SwiftUI
 
 struct Skills {
-    let data: [SkillsData]
+    let skillsData: [SkillsData]
+}
+extension Skills: Decodable, Encodable {
+    enum CodingKeys: String, CodingKey {
+        case skillsData
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        self.skillsData = try container.decode([SkillsData].self, forKey: .skillsData)
+    }
 }
 
 struct SkillsData: Hashable {
@@ -16,13 +27,16 @@ struct SkillsData: Hashable {
     let subtitle: String
     let percent: Double
 }
-
-let skills = Skills(data: skillsData)
-let skillsData = [SkillsData(name: "Microsoft Office", subtitle: "Excel, Word, Access, PowerPoint, Outlook", percent: 0.80),
-                  SkillsData(name: "Bases de datos", subtitle: "SQL, Access, Mongo",percent: 0.55),
-                  SkillsData(name: "Herramientas gráficas", subtitle: "Photoshop",percent: 0.45),
-                  SkillsData(name: "Software de Auditoria", subtitle: "IDEA, ACL",percent: 0.80),
-                  SkillsData(name: "Lenguajes de programación", subtitle: "Swift, Objective-C, SwiftUI",percent: 0.90),
-                  SkillsData(name: "API Testing", subtitle: "Postman",percent: 0.95),
-                  SkillsData(name: "Software de gestión", subtitle: "Jira, Trello",percent: 0.80),
-                  SkillsData(name: "Repositorios", subtitle: "Gitlab, Github, Bitbucket",percent: 0.90)]
+extension SkillsData: Decodable, Encodable {
+    enum CodingKeys: String, CodingKey {
+        case name, subtitle, percent
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        self.name = try container.decode(String.self, forKey: .name)
+        self.subtitle = try container.decode(String.self, forKey: .subtitle)
+        self.percent = try container.decode(Double.self, forKey: .percent)
+    }
+}
