@@ -9,7 +9,7 @@ import Foundation
 
 let personalFake = Personal(aboutMe: presentationText, personalData: personalDataFake)
 let personalDataFake = [PersonalData(title: "Edad",
-                                           description: "31"),
+                                           description: "Asertividad\nResponsabilidad\nCompromiso\nCapacidad de aprendizaje\nProactivo\nTrabajo en equipo"),
                                 PersonalData(title: "Nacionalidad",
                                            description: "Argentino"),
                                 PersonalData(title: "Localidad",
@@ -21,7 +21,7 @@ let personalDataFake = [PersonalData(title: "Edad",
                                 PersonalData(title: "Estado Civil",
                                            description: "Soltero"),
                                 PersonalData(title: "Permiso de conducir",
-                                           description: "B")
+                                           description: "Asertividad\nResponsabilidad\nCompromiso\nCapacidad de aprendizaje\nProactivo\nTrabajo en equipo")
 ]
 
 let academyFake = Academy(academyData: academyDataFake)

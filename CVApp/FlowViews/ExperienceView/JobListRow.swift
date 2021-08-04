@@ -31,7 +31,9 @@ struct JobListRow: View {
                     .frame(width: UIScreen.main.bounds.width*0.3, alignment: .trailing)
                     .multilineTextAlignment(.trailing)
                     .foregroundColor(Color(UIColor.systemIndigo))
+                    .lineLimit(2)
                     .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .minimumScaleFactor(0.01)
             }
             .padding()
         }

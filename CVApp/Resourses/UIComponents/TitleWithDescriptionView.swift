@@ -29,8 +29,9 @@ struct TitleWithDescriptionView: View {
             }
             if let description = description {
                 Text(description)
-                    .multilineTextAlignment(.leading)
+                    .lineLimit(nil)
                     .font(.system(size: 14, weight: .regular, design: .rounded))
+                    .padding(.bottom, 5)
             }
             
             Divider()

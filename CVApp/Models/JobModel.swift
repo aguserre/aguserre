@@ -43,13 +43,15 @@ extension Job: Decodable, Encodable {
         self.type = JobType(rawValue: type) ?? .other
         self.name = try container.decode(String.self, forKey: .name)
         self.position = try container.decode(String.self, forKey: .position)
-        self.dateStart = try container.decode(String.self, forKey: .dateStart)
-        self.dateEnd = try container.decode(String.self, forKey: .dateEnd)
+        let dateStart = try container.decode(String.self, forKey: .dateStart)
+        self.dateStart = dateStart.convertToShortDate() ?? dateStart
+        let dateEnd = try container.decode(String.self, forKey: .dateEnd)
+        self.dateEnd = dateEnd.convertToShortDate() ?? dateEnd
         self.description = try container.decode(String.self, forKey: .description)
 
     }
 }
 
 enum JobType: String, Codable {
-    case auditor = "Auditor de Sistemas", developer = "Developer", other = "Otros"
+    case auditor = "Auditor", developer = "Developer", other = "Otros"
 }

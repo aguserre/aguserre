@@ -59,6 +59,7 @@ struct PersonalView: View {
                     ScrollView(.vertical) {
                         ForEach(personalData?.personalData ?? personalFake.personalData, id: \.self) { data in
                             TitleWithDescriptionView(title: data.title, description: data.description, alignment: .center)
+                                .multilineTextAlignment(.center)
                         }
                     }
                     .transition(.opacity)
@@ -72,7 +73,7 @@ struct PersonalView: View {
 struct PersonalView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            PersonalView()
+            TabBarView(user: User(), images: [])
         }
         .previewDevice("iPhone 12 Pro")
     }
