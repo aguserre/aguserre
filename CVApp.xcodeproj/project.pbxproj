@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D30813C626B8AC7D0038634F /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30813C526B8AC7D0038634F /* LoadView.swift */; };
 		D30FF57126B65E7600040240 /* TitleWithCharView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30FF57026B65E7600040240 /* TitleWithCharView.swift */; };
+		D31D8E9226BB34D400F99129 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31D8E9126BB34D400F99129 /* StringExtension.swift */; };
 		D35F66E826B8896E003CA1B1 /* DYPopoverView in Frameworks */ = {isa = PBXBuildFile; productRef = D35F66E726B8896E003CA1B1 /* DYPopoverView */; };
 		D36BCA2C26B4784000D44D4D /* CVAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36BCA2B26B4784000D44D4D /* CVAppApp.swift */; };
 		D36BCA2E26B4784000D44D4D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36BCA2D26B4784000D44D4D /* TabBarView.swift */; };
@@ -23,9 +24,11 @@
 		D36BCA4726B4D1B400D44D4D /* TitleWithDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36BCA4626B4D1B400D44D4D /* TitleWithDescriptionView.swift */; };
 		D3D3FF2C26B984450054ADF7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = D3D3FF2B26B984450054ADF7 /* FirebaseDatabase */; };
 		D3D3FF2E26B985510054ADF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D3FF2D26B985510054ADF7 /* GoogleService-Info.plist */; };
-		D3D3FF3126B98BA70054ADF7 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3FF3026B98BA70054ADF7 /* ServiceManager.swift */; };
 		D3D3FF3326B9955C0054ADF7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3FF3226B9955C0054ADF7 /* UserModel.swift */; };
 		D3D3FF3526B9C3260054ADF7 /* FakeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3FF3426B9C3260054ADF7 /* FakeModels.swift */; };
+		D3D9AF9F26BB33CF00E37C0C /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9AF9D26BB33CE00E37C0C /* StorageService.swift */; };
+		D3D9AFA026BB33CF00E37C0C /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9AF9E26BB33CE00E37C0C /* DatabaseService.swift */; };
+		D3D9AFA326BB342C00E37C0C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D3D9AFA226BB342C00E37C0C /* FirebaseStorage */; };
 		D3EEC78126B744EC00D4CCCD /* JobListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEC78026B744EC00D4CCCD /* JobListRow.swift */; };
 		D3EEC78426B74AF300D4CCCD /* JobDetailSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEC78326B74AF300D4CCCD /* JobDetailSheetView.swift */; };
 		D3FA512C26B90A5D006B4AC6 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA512B26B90A5D006B4AC6 /* BlurView.swift */; };
@@ -46,6 +49,7 @@
 /* Begin PBXFileReference section */
 		D30813C526B8AC7D0038634F /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
 		D30FF57026B65E7600040240 /* TitleWithCharView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithCharView.swift; sourceTree = "<group>"; };
+		D31D8E9126BB34D400F99129 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		D36BCA2826B4784000D44D4D /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36BCA2B26B4784000D44D4D /* CVAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAppApp.swift; sourceTree = "<group>"; };
 		D36BCA2D26B4784000D44D4D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -59,9 +63,10 @@
 		D36BCA4426B4D08500D44D4D /* ConstantsStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsStrings.swift; sourceTree = "<group>"; };
 		D36BCA4626B4D1B400D44D4D /* TitleWithDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithDescriptionView.swift; sourceTree = "<group>"; };
 		D3D3FF2D26B985510054ADF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D3D3FF3026B98BA70054ADF7 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		D3D3FF3226B9955C0054ADF7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		D3D3FF3426B9C3260054ADF7 /* FakeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeModels.swift; sourceTree = "<group>"; };
+		D3D9AF9D26BB33CE00E37C0C /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		D3D9AF9E26BB33CE00E37C0C /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		D3EEC78026B744EC00D4CCCD /* JobListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListRow.swift; sourceTree = "<group>"; };
 		D3EEC78326B74AF300D4CCCD /* JobDetailSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailSheetView.swift; sourceTree = "<group>"; };
 		D3FA512B26B90A5D006B4AC6 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
@@ -86,6 +91,7 @@
 			files = (
 				D3D3FF2C26B984450054ADF7 /* FirebaseDatabase in Frameworks */,
 				D35F66E826B8896E003CA1B1 /* DYPopoverView in Frameworks */,
+				D3D9AFA326BB342C00E37C0C /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +103,7 @@
 			children = (
 				D36BCA2A26B4784000D44D4D /* CVApp */,
 				D36BCA2926B4784000D44D4D /* Products */,
+				D3D9AFA126BB342C00E37C0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,7 +177,8 @@
 		D3D3FF2F26B989570054ADF7 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				D3D3FF3026B98BA70054ADF7 /* ServiceManager.swift */,
+				D3D9AF9E26BB33CE00E37C0C /* DatabaseService.swift */,
+				D3D9AF9D26BB33CE00E37C0C /* StorageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -181,6 +189,13 @@
 				D3D3FF3426B9C3260054ADF7 /* FakeModels.swift */,
 			);
 			path = FakeModels;
+			sourceTree = "<group>";
+		};
+		D3D9AFA126BB342C00E37C0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D3EEC77E26B67DC900D4CCCD /* SkillsView */ = {
@@ -234,6 +249,7 @@
 		D3FA513526B9105D006B4AC6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D31D8E9126BB34D400F99129 /* StringExtension.swift */,
 				D3FA513626B91075006B4AC6 /* DoubleExtension.swift */,
 				D3FA514026B912DF006B4AC6 /* ArrayExtension.swift */,
 			);
@@ -286,6 +302,7 @@
 			packageProductDependencies = (
 				D35F66E726B8896E003CA1B1 /* DYPopoverView */,
 				D3D3FF2B26B984450054ADF7 /* FirebaseDatabase */,
+				D3D9AFA226BB342C00E37C0C /* FirebaseStorage */,
 			);
 			productName = CVApp;
 			productReference = D36BCA2826B4784000D44D4D /* CVApp.app */;
@@ -347,14 +364,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3D3FF3526B9C3260054ADF7 /* FakeModels.swift in Sources */,
+				D31D8E9226BB34D400F99129 /* StringExtension.swift in Sources */,
 				D3FA513F26B9128D006B4AC6 /* JobModel.swift in Sources */,
 				D36BCA4526B4D08500D44D4D /* ConstantsStrings.swift in Sources */,
+				D3D9AFA026BB33CF00E37C0C /* DatabaseService.swift in Sources */,
 				D3FA512C26B90A5D006B4AC6 /* BlurView.swift in Sources */,
 				D3FA514126B912DF006B4AC6 /* ArrayExtension.swift in Sources */,
 				D3EEC78126B744EC00D4CCCD /* JobListRow.swift in Sources */,
 				D36BCA4726B4D1B400D44D4D /* TitleWithDescriptionView.swift in Sources */,
 				D36BCA4026B4C76700D44D4D /* ExperienceView.swift in Sources */,
-				D3D3FF3126B98BA70054ADF7 /* ServiceManager.swift in Sources */,
 				D36BCA3A26B4C64300D44D4D /* PersonalView.swift in Sources */,
 				D3EEC78426B74AF300D4CCCD /* JobDetailSheetView.swift in Sources */,
 				D36BCA3E26B4C72A00D44D4D /* SkillsView.swift in Sources */,
@@ -371,6 +389,7 @@
 				D36BCA2C26B4784000D44D4D /* CVAppApp.swift in Sources */,
 				D3D3FF3326B9955C0054ADF7 /* UserModel.swift in Sources */,
 				D36BCA3C26B4C6B900D44D4D /* AcademyView.swift in Sources */,
+				D3D9AF9F26BB33CF00E37C0C /* StorageService.swift in Sources */,
 				D3FA513D26B9122C006B4AC6 /* SkillsModel.swift in Sources */,
 				D3FA513B26B9113E006B4AC6 /* AcademyModel.swift in Sources */,
 				D30FF57126B65E7600040240 /* TitleWithCharView.swift in Sources */,
@@ -609,6 +628,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D3D3FF2A26B984450054ADF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		D3D9AFA226BB342C00E37C0C /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3D3FF2A26B984450054ADF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
