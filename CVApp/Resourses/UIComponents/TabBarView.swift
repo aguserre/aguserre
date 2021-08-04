@@ -52,7 +52,7 @@ struct TabBarView: View {
                 isLoading.toggle()
                 return
             }
-            StorageManager().getUserImage(user: user) { image in
+            storageManager.getUserImage(user: user) { image in
                 storageManager.listAllFiles(user: user) { userData in
                     var userWithImages = user
                     if let image = image {
