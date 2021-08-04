@@ -46,7 +46,7 @@ struct TabBarView: View {
     }
     
     func fakeServiceCall() {
-        ServiceManager().fetchData { user in
+        DatabaseService().fetchData { user in
             guard let user = user else {
                 //show alert / fake data will show
                 isLoading.toggle()
