@@ -16,7 +16,7 @@ struct AcademyView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView(.vertical) {
+            ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     ForEach(userAcademy?.academyData ?? academyFake.academyData, id: \.self) { data in
                         HStack {

@@ -54,6 +54,13 @@ class ServiceManager {
 
 class StorageManager: ObservableObject {
     let storage = Storage.storage()
+    
+    func getUserImage(user: User , handler: @escaping ((Image?)->(Void))) {
+        let pathReference = storage.reference(forURL: "gs://cvapp-16f91.appspot.com/userProfile/userProfile.jpeg")
+        pathReference.getData(maxSize: 1 * 1024 * 1024) { data, error in
+            handler( Image(uiImage: (UIImage(data: (data ?? Data())) ?? UIImage() )) )
+        }
+    }
 
     func listAllFiles(user: User, handler: @escaping (([GridItem]?)->(Void))) {
         var counter = 0
@@ -68,8 +75,6 @@ class StorageManager: ObservableObject {
                             g.socialImage = image
                             gridWithImage.append(g)
                             counter += 1
-                            debugPrint(counter, userData.count)
-
                             if counter == userData.count {
                                 handler(gridWithImage)
                             }

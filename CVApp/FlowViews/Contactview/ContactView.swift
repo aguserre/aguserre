@@ -41,7 +41,7 @@ struct ContactView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView(.vertical) {
+            ScrollView(.vertical, showsIndicators: false) {
                 HStack(alignment: .top, spacing: spacing) {
                     ForEach(columns) { column in
                         LazyVStack(spacing: spacing) {

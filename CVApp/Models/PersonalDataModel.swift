@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct Personal {
+    var profileImage: Image = Image("defaultImage")
     let aboutMe: String
     let personalData: [PersonalData]
 }

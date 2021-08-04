@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct User {
-    let personal: Personal?
+    var personal: Personal?
     let jobs: JobExperience?
     let academy: Academy?
     let skills: Skills?

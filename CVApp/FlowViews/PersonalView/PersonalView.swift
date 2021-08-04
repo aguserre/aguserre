@@ -19,7 +19,7 @@ struct PersonalView: View {
 
     var body: some View {
             VStack {
-                HeaderMainView()
+                HeaderMainView(profileImage: personalData?.profileImage)
                 
                 if !scrollViewIsShowing {
                     ZStack(alignment: .bottom) {

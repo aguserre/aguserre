@@ -14,7 +14,7 @@ struct SkillsView: View {
     var body: some View {
 
         NavigationView {
-            ScrollView(.vertical) {
+            ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     ForEach(skills?.skillsData ?? skillsFake.skillsData, id: \.self) { skill in
                         TitleWithCharView(title: skill.name, subtitle: skill.subtitle, char: skill.percent)
