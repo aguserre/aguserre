@@ -25,7 +25,7 @@ enum TabBarItemModel: Int {
         }
     }
     
-    func viewToShow(user: User) -> some View {
+    func viewToShow(user: User, socials: [Image]) -> some View {
         ZStack {
             switch self {
             case .person:

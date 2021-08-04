@@ -10,13 +10,13 @@ import SwiftUI
 struct HeaderMainView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
-            Image("backgroundImage")
+            Image("background")
                 .resizable()
                 .ignoresSafeArea()
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width/2 + 50)
                 .shadow(color: .black, radius: 4)
             VStack {
-                Image("focusin")
+                Image("defaultImage")
                     .resizable()
                     .frame(width: UIScreen.main.bounds.width/2, height: UIScreen.main.bounds.width/2, alignment: .center)
                     .cornerRadius(UIScreen.main.bounds.width/2)

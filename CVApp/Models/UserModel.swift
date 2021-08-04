@@ -12,7 +12,9 @@ struct User {
     let jobs: JobExperience?
     let academy: Academy?
     let skills: Skills?
-    let social: Social?
+    var social: Social?
+    
+    var socialImages = [UIImage]()
 }
 
 extension User: Decodable, Encodable {

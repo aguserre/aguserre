@@ -74,7 +74,7 @@ fileprivate func getItemView(gridItem: GridItem) -> some View {
     ZStack {
         GeometryReader { reader in
             Link(destination: URL(string: gridItem.url)!) {
-                Image(gridItem.imageString)
+                Image(uiImage: gridItem.socialImage)
                     .resizable()
                     .scaledToFill()
                     .frame(width: reader.size.width, height: reader.size.height, alignment: .center)

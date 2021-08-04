@@ -9,14 +9,16 @@ import SwiftUI
 
 struct TabBarView: View {
 
+    var storageManager = StorageManager()
     @State var user: User
+    @State var images = [Image]()
     @State private var isLoading = true
     @State private var selectedItem: TabBarItemModel = .person
 
     var body: some View {
         ZStack {
             VStack {
-                selectedItem.viewToShow(user: self.user)
+                selectedItem.viewToShow(user: self.user, socials: self.images)
                 Divider()
                 HStack {
                     ForEach(TabBarItemModel.allItems, id: \.self) { item in
@@ -50,8 +52,15 @@ struct TabBarView: View {
                 isLoading.toggle()
                 return
             }
-            self.user = user
-            isLoading.toggle()
+            storageManager.listAllFiles(user: user) { userData in
+                var userWithImages = user
+                if let dataWithImages = userData {
+                    userWithImages.social?.socialData = dataWithImages
+                }
+                self.user = userWithImages
+                
+                isLoading.toggle()
+            }
         }
     }
 }

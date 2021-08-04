@@ -32,6 +32,7 @@ struct GridItem: Identifiable {
     let id = UUID()
     let height: CGFloat
     let imageString: String
+    var socialImage = UIImage(named: "defaultImage") ?? UIImage()
     let url: String
 }
 extension GridItem: Decodable, Encodable {
