@@ -40,12 +40,12 @@ struct TabBarView: View {
             }
         
         }.onAppear {
-            fakeServiceCall()
+            getUserData()
         }
         
     }
     
-    func fakeServiceCall() {
+    func getUserData() {
         DatabaseService().fetchData { user in
             guard let user = user else {
                 //show alert / fake data will show
