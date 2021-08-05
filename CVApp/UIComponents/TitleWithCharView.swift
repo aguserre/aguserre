@@ -11,6 +11,8 @@ struct TitleWithCharView: View {
     var title: String
     var subtitle: String? = nil
     var char: Double
+    private let paddingChar: CGFloat = 10
+    private let heightChar: CGFloat = 20
     
     @State var animate = false
     
@@ -21,15 +23,19 @@ struct TitleWithCharView: View {
                     Rectangle()
                         .foregroundColor(.clear)
                         .background(
-                            RoundedRectangle(cornerRadius: 10, style: .continuous).fill(LinearGradient(colors: [.clear, .clear, .clear ,Color.mainPurpleColor,Color.mainPurpleColor], startPoint: .leading, endPoint: .trailing))
+                            Rectangle().fill(LinearGradient(colors: [.clear, .clear, .clear ,Color.mainPurpleColor,Color.mainPurpleColor], startPoint: .leading, endPoint: .trailing))
+                                .cornerRadius(10, corners: [.topRight, .bottomRight])
+                                
                         )
                         .overlay(
-                            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            Rectangle()
                                 .strokeBorder(Color.mainPurpleColor, lineWidth: 2)
+                                .cornerRadius(10, corners: [.topRight, .bottomRight])
+                            
                         )
-                        .frame(width: animate ? char.widthPercentage : 0, height: 20)
+                        .frame(width: animate ? char.widthPercentage : 0, height: heightChar)
                         .onAppear {
-                            withAnimation(.spring()) {
+                            withAnimation(.spring().delay(0.3)) {
                                 animate.toggle()
                             }
                         }
@@ -39,14 +45,14 @@ struct TitleWithCharView: View {
                             .font(.system(size: 14, weight: .bold, design: .rounded))
                             .minimumScaleFactor(0.01)
                             .foregroundColor(Color.labelColor)
-                            .padding(.leading, 10)
+                            .padding(.leading, paddingChar)
                         Spacer()
                         Text(char.percentStyle)
                             .multilineTextAlignment(.trailing)
                             .font(.system(size: 14, weight: .medium, design: .rounded))
                             .foregroundColor(.white)
-                            .padding(.leading, 10)
-                    }.frame(width: char.widthPercentage - 10, height: 20)
+                            .padding(.leading, paddingChar)
+                    }.frame(width: char.widthPercentage - paddingChar, height: heightChar)
 
                 }
                 Spacer()

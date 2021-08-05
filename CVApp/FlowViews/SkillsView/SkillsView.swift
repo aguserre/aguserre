@@ -18,6 +18,7 @@ struct SkillsView: View {
                 VStack {
                     ForEach(skills?.skillsData ?? skillsFake.skillsData, id: \.self) { skill in
                         TitleWithCharView(title: skill.name, subtitle: skill.subtitle, char: skill.percent)
+                        Divider()
                     }
                 }
                 .navigationTitle("Skills")

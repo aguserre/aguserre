@@ -24,7 +24,7 @@ extension Double {
     }
     
     var widthPercentage: CGFloat {
-        let fullWidht = UIScreen.main.bounds.width
+        let fullWidht = UIScreen.main.bounds.width - 10
         let percent = self
         
         return percent*fullWidht
