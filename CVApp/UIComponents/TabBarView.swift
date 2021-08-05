@@ -9,7 +9,6 @@ import SwiftUI
 
 struct TabBarView: View {
 
-    var storageManager = StorageManager()
     @State var user: User
     @State var images = [Image]()
     @State private var isLoading = true
@@ -48,10 +47,11 @@ struct TabBarView: View {
     func getUserData() {
         DatabaseService().fetchData { user in
             guard let user = user else {
-                //show alert / fake data will show
+                //Fake data will show
                 isLoading.toggle()
                 return
             }
+            let storageManager = StorageManager()
             storageManager.getUserImage(user: user) { image in
                 storageManager.listAllFiles(user: user) { userData in
                     var userWithImages = user
