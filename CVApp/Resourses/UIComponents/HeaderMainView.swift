@@ -23,7 +23,7 @@ struct HeaderMainView: View {
                     .resizable()
                     .frame(width: UIScreen.main.bounds.width/2, height: UIScreen.main.bounds.width/2, alignment: .center)
                     .cornerRadius(UIScreen.main.bounds.width/2)
-                    .shadow(color: Color(UIColor.systemIndigo), radius: 10)
+                    .shadow(color: Color.mainPurpleColor, radius: 10)
                 
                 ZStack {
                     

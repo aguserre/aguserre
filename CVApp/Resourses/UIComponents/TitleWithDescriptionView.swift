@@ -19,13 +19,13 @@ struct TitleWithDescriptionView: View {
                 Text(title)
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 16, weight: .bold, design: .rounded))
-                    .foregroundColor(Color(UIColor.systemIndigo))
+                    .foregroundColor(Color.mainPurpleColor)
             }
             if let subtitle = subtitle {
                 Text(subtitle)
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 12, weight: .medium, design: .rounded))
-                    .foregroundColor(Color(UIColor.systemGray2))
+                    .foregroundColor(Color.systemGray2Color)
             }
             if let description = description {
                 Text(description)

@@ -24,7 +24,7 @@ struct ExperienceView: View {
                     ForEach(sections ?? sectionsFake, id: \.self) { section in
                         Section(header:
                             Text(section.rawValue)
-                            .foregroundColor(Color(UIColor.systemIndigo))
+                                    .foregroundColor(Color.mainPurpleColor)
                             .font(.system(size: 20, weight: .bold, design: .rounded))) {
                             ForEach(experience?.jobsData ?? experienceFake.jobsData, id: \.name) { job in
                                 if job.type == section {

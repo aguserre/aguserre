@@ -21,11 +21,11 @@ struct TitleWithCharView: View {
                     Rectangle()
                         .foregroundColor(.clear)
                         .background(
-                            RoundedRectangle(cornerRadius: 10, style: .continuous).fill(LinearGradient(colors: [.clear, .clear, .clear ,Color(UIColor.systemIndigo),Color(UIColor.systemIndigo)], startPoint: .leading, endPoint: .trailing))
+                            RoundedRectangle(cornerRadius: 10, style: .continuous).fill(LinearGradient(colors: [.clear, .clear, .clear ,Color.mainPurpleColor,Color.mainPurpleColor], startPoint: .leading, endPoint: .trailing))
                         )
                         .overlay(
                             RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                .strokeBorder(Color(UIColor.systemIndigo), lineWidth: 2)
+                                .strokeBorder(Color.mainPurpleColor, lineWidth: 2)
                         )
                         .frame(width: animate ? char.widthPercentage : 0, height: 20)
                         .onAppear {
@@ -38,7 +38,7 @@ struct TitleWithCharView: View {
                             .multilineTextAlignment(.leading)
                             .font(.system(size: 14, weight: .bold, design: .rounded))
                             .minimumScaleFactor(0.01)
-                            .foregroundColor(Color(UIColor.label))
+                            .foregroundColor(Color.labelColor)
                             .padding(.leading, 10)
                         Spacer()
                         Text(char.percentStyle)
@@ -59,7 +59,7 @@ struct TitleWithCharView: View {
                 Text(subtitle)
                     .frame(width: UIScreen.main.bounds.width*0.95, alignment: .leading)
                     .font(.system(size: 12, weight: .medium, design: .rounded))
-                    .foregroundColor(Color(UIColor.secondaryLabel))
+                    .foregroundColor(Color.secondaryLabelColor)
             }
         }
         

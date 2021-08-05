@@ -18,7 +18,7 @@ struct AnimateCircle: View {
             .trim(from: animateStrokeStart ? 1/3 : 1/9, to: animateStrokeEnd ? 2/9 : 1)
             .stroke(lineWidth: 6)
             .frame(width: 50, height: 50)
-            .foregroundColor(Color(UIColor.systemIndigo))
+            .foregroundColor(Color.mainPurpleColor
             .rotationEffect(.degrees(isRotating ? 360 : 0))
             .onAppear {
                 withAnimation(Animation.linear(duration: 0.6).repeatForever(autoreverses: false)) {

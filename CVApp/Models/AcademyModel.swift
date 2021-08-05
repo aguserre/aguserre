@@ -78,13 +78,13 @@ enum AcademyStatus: String, Codable {
     var iconColor: Color {
         switch self {
         case .completed:
-            return Color(UIColor.systemGreen)
+            return Color.systemGreenColor
         case .onCurse:
-            return Color(UIColor.systemBlue)
+            return Color.systemBlueColor
         case .abandoned:
-            return Color(UIColor.systemRed)
+            return Color.systemRedColor
         case .paused:
-            return Color(UIColor.systemYellow)
+            return Color.systemYellowColor
         }
     }
 }

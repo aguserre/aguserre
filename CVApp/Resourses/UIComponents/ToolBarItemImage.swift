@@ -15,11 +15,11 @@ struct ToolBarItemImage: View {
         HStack {
             Image(systemName: item.stringName)
                 .frame(width: 30, height: 30, alignment: .center)
-                .foregroundColor(Color(UIColor.label))
+                .foregroundColor(Color.labelColor)
                 .background(
-                    Color(UIColor.systemBackground)
+                    Color.systemBackgroundColor
                         .cornerRadius(15)
-                        .shadow(color: Color(UIColor.systemIndigo), radius: 10)
+                        .shadow(color: Color.mainPurpleColor, radius: 10)
                 )
         }
     }

@@ -27,9 +27,9 @@ struct TabBarView: View {
                             self.selectedItem = item
                         } label: {
                             Image(systemName: item.stringName)
-                                .shadow(color: Color(UIColor.systemIndigo), radius: selectedItem == item ? 5 : 0)
-                                .font(.system(size: 22, weight : .regular, design: .default ))
-                                .foregroundColor(selectedItem == item ? Color(UIColor.systemIndigo) : Color(UIColor.lightGray))
+                                .shadow(color: Color.mainPurpleColor, radius: selectedItem == item ? 5 : 0)
+                                .font(.system(size: 22, weight : .regular, design: .rounded ))
+                                .foregroundColor(selectedItem == item ? Color.mainPurpleColor : Color.lightGrayColor)
                         }
                         Spacer()
                     }

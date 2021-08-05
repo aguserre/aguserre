@@ -12,8 +12,8 @@ struct GradientTranslucentView: View {
         Rectangle()
             .fill(
                 LinearGradient(gradient: Gradient(stops: [
-                    .init(color: Color(UIColor.systemBackground).opacity(0.01), location: 0),
-                    .init(color: Color(UIColor.systemBackground), location: 1)
+                    .init(color: Color.systemBackgroundColor.opacity(0.01), location: 0),
+                    .init(color: Color.systemBackgroundColor, location: 1)
                 ]), startPoint: .top, endPoint: .bottom)
             ).frame(height: 60)
     }

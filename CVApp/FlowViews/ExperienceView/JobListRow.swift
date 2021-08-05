@@ -20,17 +20,17 @@ struct JobListRow: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text(job.position)
-                        .foregroundColor(Color(UIColor.label))
+                        .foregroundColor(Color.labelColor)
                         .font(.system(size: 14, weight: .semibold, design: .rounded))
                     Text(job.dateStart + " - " + job.dateEnd)
-                        .foregroundColor(Color(UIColor.secondaryLabel))
+                        .foregroundColor(Color.secondaryLabelColor)
                         .font(.system(size: 12, weight: .regular, design: .rounded))
                 }
                 Spacer()
                 Text(job.name)
                     .frame(width: UIScreen.main.bounds.width*0.3, alignment: .trailing)
                     .multilineTextAlignment(.trailing)
-                    .foregroundColor(Color(UIColor.systemIndigo))
+                    .foregroundColor(Color.mainPurpleColor)
                     .lineLimit(2)
                     .font(.system(size: 16, weight: .bold, design: .rounded))
                     .minimumScaleFactor(0.01)

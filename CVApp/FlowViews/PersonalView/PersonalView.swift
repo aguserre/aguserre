@@ -42,12 +42,12 @@ struct PersonalView: View {
                     } label: {
                         Text(scrollViewIsShowing ? "X" : "Ver mas sobre mí")
                             .font(.system(size: 16, weight: .bold, design: .rounded))
-                            .foregroundColor(scrollViewIsShowing ? .red : Color(UIColor.systemIndigo))
+                            .foregroundColor(scrollViewIsShowing ? .red : Color.mainPurpleColor)
                     }
                     .frame(width: width, height: height, alignment: .center)
                     .overlay(
                         RoundedRectangle(cornerRadius: scrollViewIsShowing ? 10 : 20)
-                            .stroke(scrollViewIsShowing ? .red : Color(UIColor.systemIndigo), lineWidth: 1)
+                            .stroke(scrollViewIsShowing ? .red : Color.mainPurpleColor, lineWidth: 1)
                     )
                 }
                 .padding([.leading, .trailing, .top], 20)

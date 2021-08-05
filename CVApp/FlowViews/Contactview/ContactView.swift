@@ -48,9 +48,9 @@ struct ContactView: View {
                             ForEach(column.socialData) {item in
                                 getItemView(gridItem: item)
                                     .background(
-                                        Color(UIColor.systemBackground)
+                                        Color.systemBackgroundColor
                                             .cornerRadius(13)
-                                            .shadow(color: Color(UIColor.systemIndigo), radius: 5).opacity(1)
+                                            .shadow(color: Color.mainPurpleColor, radius: 5).opacity(1)
                                     )
                             }
                         }

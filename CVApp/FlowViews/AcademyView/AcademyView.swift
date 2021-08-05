@@ -27,7 +27,7 @@ struct AcademyView: View {
                                     dataSelected = data
                                     isShowingState.toggle()
                                 })
-                                .foregroundColor(Color(UIColor.label))
+                                .foregroundColor(Color.labelColor)
                                 .font(.system(size: 18, weight : .bold, design: .default ))
                                 .frame(width: 26, height: 26, alignment: .center)
                                 .background(
@@ -56,12 +56,12 @@ struct AcademyView: View {
                 Text(dataSelected.status.rawValue)
                     .multilineTextAlignment(.center)
                     .font(.system(size: 16, weight: .bold, design: .rounded))
-                    .foregroundColor(Color(UIColor.label))
+                    .foregroundColor(Color.labelColor)
             }
             
         }, background: {
             dataSelected.status.iconColor
-                .shadow(color: Color(UIColor.label), radius: 5)
+                .shadow(color: Color.labelColor, radius: 5)
                 .onTapGesture {
                 isShowingState.toggle()
             }

@@ -19,7 +19,7 @@ struct JobDetailSheetView: View {
                     presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Image(systemName: "xmark")
-                        .foregroundColor(Color(UIColor.label))
+                        .foregroundColor(Color.labelColor)
                 })
                     .padding(.trailing, 20)
                     .padding(.top, 10)
@@ -28,15 +28,15 @@ struct JobDetailSheetView: View {
                 Text(job?.position ?? "")
                     .multilineTextAlignment(.center)
                     .font(.system(size: 32, weight: .bold, design: .rounded))
-                    .foregroundColor(Color(UIColor.systemIndigo))
+                    .foregroundColor(Color.mainPurpleColor)
                 Text(job?.name ?? "")
                     .multilineTextAlignment(.center)
                     .font(.system(size: 16, weight: .medium, design: .rounded))
-                    .foregroundColor(Color(UIColor.label))
+                    .foregroundColor(Color.labelColor)
                 Text((job?.dateStart ?? "") + " - " + (job?.dateEnd ?? ""))
                     .multilineTextAlignment(.center)
                     .font(.system(size: 14, weight: .medium, design: .rounded))
-                    .foregroundColor(Color(UIColor.secondaryLabel))
+                    .foregroundColor(Color.secondaryLabelColor)
                     .padding(.top, 2)
             }
             
@@ -46,15 +46,15 @@ struct JobDetailSheetView: View {
                 .frame(width: UIScreen.main.bounds.width*0.9, alignment: .leading)
                 .padding(.top, 20)
                 .font(.system(size: 14, weight: .bold, design: .rounded))
-                .foregroundColor(Color(UIColor.systemIndigo))
+                .foregroundColor(Color.mainPurpleColor)
             ScrollView(.vertical) {
                 Text(job?.description ?? "")
                     .frame(width: UIScreen.main.bounds.width*0.90, alignment: .leading)
                     .font(.system(size: 14, weight: .medium, design: .rounded))
-                    .foregroundColor(Color(UIColor.label))
+                    .foregroundColor(Color.labelColor)
                     .padding()
             }
-            .background(Color(UIColor.secondarySystemBackground))
+            .background(Color.secondarySystemBackgroundColor)
             .frame(width: UIScreen.main.bounds.width*0.98)
             .cornerRadius(10)
         }
