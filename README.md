@@ -20,14 +20,22 @@
 [![image](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eagustiin@gmail.com)
 </div>
 
-<a href="https://github.com/aguserre/aguserre" target="_blank"><h3 align="center">Check my CVApp in this repo, building with SwiftUI and Firebase:</h3></a>
+<a href="https://github.com/aguserre/aguserre" target="_blank"><h3 align="center">Check my CVApp in this repo, building with SwiftUI and Firebase</h3></a>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/50756810/128765422-af71d2af-cc2c-4e2e-b2f6-f103f7024263.gif" alt="animated" />
 </p>
 
-<a href="https://github.com/aguserre/calendar" target="_blank"><h3 align="center">Or my native Custom calendar, with Argentine holidays:</h3></a>
+<a href="https://github.com/aguserre/calendar" target="_blank"><h3 align="center">Or my native Custom calendar, with Argentine holidays</h3></a>
 <p align="center">
     <img src="https://user-images.githubusercontent.com/50756810/128768854-b5561a6a-2fd5-4529-9452-eb2d10f00a5d.gif" alt="animated" />
+</p>
+
+<a href="https://github.com/aguserre/spaceGame" target="_blank"><h3 align="center">Download and enjoy my Space Game</h3></a>
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/50756810/128919002-2e613dd1-2a5c-4716-ba6b-a5f8149fc743.PNG" alt="animated" width="200" height="400"/>
+    <img src="https://user-images.githubusercontent.com/50756810/128919428-5e234494-3c7b-4a27-ae43-4519cb510924.PNG" alt="animated" width="200" height="400"/>
+    <img src="https://user-images.githubusercontent.com/50756810/128919659-548186cc-d653-4639-ac6b-d15ac08951c2.PNG" alt="animated" width="200" height="400"/>
+    <img src="https://user-images.githubusercontent.com/50756810/128919725-dae3fea6-dd17-4e52-8d35-b0aa210a2db9.PNG" alt="animated" width="200" height="400"/>
 </p>
 
 <p align= "center">
