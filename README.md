@@ -20,12 +20,12 @@
 [![image](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eagustiin@gmail.com)
 </div>
 
-<h3 align="center">Check my CVApp in this repo, building with SwiftUI and Firebase:</h3>
+<a href="https://github.com/aguserre/aguserre" target="_blank"><h3 align="center">Check my CVApp in this repo, building with SwiftUI and Firebase:</h3></a>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/50756810/128765422-af71d2af-cc2c-4e2e-b2f6-f103f7024263.gif" alt="animated" />
 </p>
 
-<h3 align="center">Or my native Custom calendar, with Argentine holidays:</h3>
+<a href="https://github.com/aguserre/calendar" target="_blank"><h3 align="center">Or my native Custom calendar, with Argentine holidays:</h3></a>
 <p align="center">
     <img src="https://user-images.githubusercontent.com/50756810/128768854-b5561a6a-2fd5-4529-9452-eb2d10f00a5d.gif" alt="animated" />
 </p>
