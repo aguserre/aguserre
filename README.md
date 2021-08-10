@@ -1,10 +1,7 @@
 <h1 align="center">Hi 👋, I'm Agustín <img height="40" src="https://emoji.gg/assets/emoji/4164-amongus.png"></h1>
 
 
-<h3 align="center">A passionate Swift developer from Argentina</h3>
-<p align="center">
-  <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" alt="animated" />
-</p>
+<h3 align="center">A passionate <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badgelogoColor=white" alt="animated"/> developer from Argentina</h3>
 
 - 🌱 I’m currently learning **RxSwift and SwiftUI**
 
